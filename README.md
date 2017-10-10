@@ -85,7 +85,7 @@ timestamp,ig_id,id,shortcode,caption
 
 #### childrenDecorator
 
-Instagram is still not fully compatible with Facebook’s Graph API so as the default open-close tag for the mapper is ‘{’ and ‘}’ you can change it by using parameters rule called **childrenDecorator** to change it.
+Instagram is still not fully compatible with Facebook’s Graph API so as the default open-close tag for the mapper is ‘{’ and ‘}’ you can change it by using rule called **childrenDecorator**.
 
 Example (Instagram):
 ```php
@@ -112,7 +112,7 @@ If some fields have values (in case of RESTFull requests for the Instagram for e
 **Example:**
 ```php
 	const RULES = [ 
-    	'followerCount' => ['metCriteria' => ['fieldName' => 'period', 'expectedValue' => 'day', 'comparisonOperator' => '==']], 
+    	'followerCount' => ['metCriteria' => ['fieldName' => 'period', 'expectedValue' => 'day', 'comparisonOperator' => ==']], 
     ];
 
 	const FIELDS_MAPPER = [ 
